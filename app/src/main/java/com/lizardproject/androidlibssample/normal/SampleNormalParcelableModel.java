@@ -24,8 +24,7 @@ public class SampleNormalParcelableModel implements Parcelable {
 		this.sampleInt = source.readInt();
 	}
 
-	public static final Parcelable.Creator<SampleNormalParcelableModel> CREATOR
-			= new Parcelable.Creator<SampleNormalParcelableModel>() {
+	public static final Parcelable.Creator<SampleNormalParcelableModel> CREATOR = new Parcelable.Creator<SampleNormalParcelableModel>() {
 
 		@Override
 		public SampleNormalParcelableModel createFromParcel(Parcel source) {
