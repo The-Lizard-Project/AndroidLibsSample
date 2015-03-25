@@ -15,13 +15,13 @@ public class SampleNormalParcelableModel implements Parcelable {
 
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
-		dest.writeDouble(this.sampleDouble);
-		dest.writeInt(this.sampleInt);
+		dest.writeDouble(sampleDouble);
+		dest.writeInt(sampleInt);
 	}
 
 	public SampleNormalParcelableModel(Parcel source) {
-		this.sampleDouble = source.readDouble();
-		this.sampleInt = source.readInt();
+		sampleDouble = source.readDouble();
+		sampleInt = source.readInt();
 	}
 
 	public static final Parcelable.Creator<SampleNormalParcelableModel> CREATOR = new Parcelable.Creator<SampleNormalParcelableModel>() {

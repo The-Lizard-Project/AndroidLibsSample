@@ -4,8 +4,8 @@ import android.content.SharedPreferences;
 
 public class SampleNormalSharedPreferences {
 
-	private static final String FLOAT_KEY = "myFloat";
-	private static final String INT_KEY = "myInt";
+	private static final String FLOAT_KEY = "floatKey";
+	private static final String INT_KEY = "intKey";
 
 	private final SharedPreferences sharedPreferences;
 
@@ -17,8 +17,8 @@ public class SampleNormalSharedPreferences {
 		return sharedPreferences.getFloat(FLOAT_KEY, 0.0f);
 	}
 
-	public void setFloat(float myFloat) {
-		sharedPreferences.edit().putFloat(FLOAT_KEY, myFloat).apply();
+	public void setFloat(float floatToSave) {
+		sharedPreferences.edit().putFloat(FLOAT_KEY, floatToSave).apply();
 	}
 
 	public boolean containsFloat() {
@@ -33,8 +33,8 @@ public class SampleNormalSharedPreferences {
 		return sharedPreferences.getInt(INT_KEY, 1000);
 	}
 
-	public void setInt(int myInt) {
-		sharedPreferences.edit().putInt(INT_KEY, myInt).apply();
+	public void setInt(int intToSave) {
+		sharedPreferences.edit().putInt(INT_KEY, intToSave).apply();
 	}
 
 	public boolean containsInt() {

@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-public class SampleLibsHriseyFragment extends Fragment {
+public class SampleNormalInstanceStateFragment extends Fragment {
 
-	private static final String INT_KEY = "sampleInt";
-	private static final String PARCELABLE_KEY = "myParcelable";
-	private static final String STRINGS_KEY = "myStrings";
+	private static final String INT_KEY = "intKey";
+	private static final String PARCELABLE_KEY = "parcelableKey";
+	private static final String STRINGS_KEY = "stringsKey";
 
 	private int sampleInt;
 	private SampleNormalParcelableModel sampleParcelable;

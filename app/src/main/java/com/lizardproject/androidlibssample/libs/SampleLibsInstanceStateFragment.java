@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import hrisey.InstanceState;
 
-public class SampleLibsHriseyFragment extends Fragment {
+public class SampleLibsInstanceStateFragment extends Fragment {
 
 	@InstanceState
 	private int sampleInt;
